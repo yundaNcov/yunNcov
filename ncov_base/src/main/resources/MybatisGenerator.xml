@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "C:\\Users\\wangy\\Desktop\\mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!-- 本地硬盘数据库驱动包 -->
+    <classPathEntry location="C:\\Users\\wangy\\Desktop\\mysql-connector-java-8.0.17.jar" />
+
+    <context id="Mybatis3Context" targetRuntime="MyBatis3">
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <commentGenerator>
+            <!-- 去掉生成日期那行注释 -->
+            <property name="suppressDate" value="true"/>
+            <!-- 是否去除自动生成所有的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/panda?serverTimezone=UTC"
+                        userId="root"
+                        password="001127">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!-- 模型的包名和位置-->
+        <javaModelGenerator targetPackage="ynu.edu.base.pojo" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- 映射文件的包名和位置-->
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- DAO的包名和位置-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="ynu.edu.base.dao" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+        <!--Server位置-->
+
+
+<!--        <table tableName="user123" domainObjectName="User" >-->
+<!--        </table>-->
+<!--        <table tableName="flowrate_place" domainObjectName="FlowratePlace" >-->
+<!--        </table>-->
+<!--        <table tableName="flowrate_access_record" domainObjectName="FlowrateAccessRecord" >-->
+<!--        </table>-->
+<!--        <table tableName="flowrate_return_information" domainObjectName="FlowrateReturnInformation" >-->
+<!--        </table>-->
+<!--        <table tableName="role" domainObjectName="Role" >-->
+<!--        </table>-->
+        <table tableName="popedom" domainObjectName="Popedom" >
+        </table>
+<!--        <table tableName="role_popedom" domainObjectName="RolePopedom" >-->
+<!--        </table>-->
+<!--        <table tableName="system_ddl" domainObjectName="SystemDd1" >-->
+<!--        </table>-->
+<!--        <table tableName="flowrate_logs" domainObjectName="FlowrateLogs" >-->
+<!--        </table>-->
+<!--        <table tableName="flowrate_archives" domainObjectName="FlowrateArchive" >-->
+<!--        </table>-->
+<!--        <table tableName="flowrate_map_ding" domainObjectName="FlowrateMapDing" >-->
+<!--        </table>-->
+<!--        <table tableName="flowrate_region_boundary" domainObjectName="FlowrateRegionBoundary" >-->
+<!--        </table>-->
+<!--        <table tableName="Grind" domainObjectName="Grind" >-->
+<!--        </table>-->
+<!--        <table tableName="Head_Presentation" domainObjectName="Head_Presentation" >-->
+<!--        </table>-->
+<!--        <table tableName="Heart_Rate_Records" domainObjectName="Heart_Rate_Records" >-->
+<!--        </table>-->
+<!--        <table tableName="Music" domainObjectName="Music" >-->
+<!--        </table>-->
+<!--        <table tableName="Music_Favorites" domainObjectName="Music_Favorites" >-->
+<!--        </table>-->
+<!--        <table tableName="News" domainObjectName="News" >-->
+<!--        </table>-->
+<!--        <table tableName="Position_Record" domainObjectName="Position_Record" >-->
+<!--        </table>-->
+<!--        <table tableName="Preference" domainObjectName="Preference" >-->
+<!--        </table>-->
+<!--        <table tableName="Relaxation" domainObjectName="Relaxation" >-->
+<!--        </table>-->
+<!--        <table tableName="Sleep_Presentation" domainObjectName="Sleep_Presentation" >-->
+<!--        </table>-->
+<!--        <table tableName="Sleep_Time" domainObjectName="Sleep_Time" >-->
+<!--        </table>-->
+<!--        <table tableName="Snoring_Record" domainObjectName="Snoring_Record" >-->
+<!--        </table>-->
+<!--&lt;!&ndash;        <table tableName="user" domainObjectName="User" >&ndash;&gt;-->
+<!--&lt;!&ndash;        </table>&ndash;&gt;-->
+<!--        <table tableName="User_Notification_Record" domainObjectName="User_Notification_Record" >-->
+<!--        </table>-->
+
+    </context>
+
+</generatorConfiguration>

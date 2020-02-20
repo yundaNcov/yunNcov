@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ynu.edu.base.dao.FlowrateReturnInformationMapper">
+  <resultMap id="BaseResultMap" type="ynu.edu.base.pojo.FlowrateReturnInformation">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="departure_time" jdbcType="TIMESTAMP" property="departureTime" />
+    <result column="destination_time" jdbcType="TIMESTAMP" property="destinationTime" />
+    <result column="departure" jdbcType="VARCHAR" property="departure" />
+    <result column="destination" jdbcType="VARCHAR" property="destination" />
+    <result column="number" jdbcType="INTEGER" property="number" />
+    <result column="stayPlace" jdbcType="VARCHAR" property="stayplace" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="is_delete" jdbcType="TINYINT" property="isDelete" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, type, departure_time, destination_time, departure, destination, number, stayPlace, 
+    remark, is_delete, user_id
+  </sql>
+  <select id="selectByExample" parameterType="ynu.edu.base.pojo.FlowrateReturnInformationExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from flowrate_return_information
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="startRow != null and pageSize != null and pageSize != 0">
+      limit #{startRow,jdbcType=INTEGER}, #{pageSize,jdbcType=INTEGER}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from flowrate_return_information
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from flowrate_return_information
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="ynu.edu.base.pojo.FlowrateReturnInformationExample">
+    delete from flowrate_return_information
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="ynu.edu.base.pojo.FlowrateReturnInformation">
+    insert into flowrate_return_information (id, type, departure_time, 
+      destination_time, departure, destination, 
+      number, stayPlace, remark, 
+      is_delete, user_id)
+    values (#{id,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, #{departureTime,jdbcType=TIMESTAMP}, 
+      #{destinationTime,jdbcType=TIMESTAMP}, #{departure,jdbcType=VARCHAR}, #{destination,jdbcType=VARCHAR}, 
+      #{number,jdbcType=INTEGER}, #{stayplace,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, 
+      #{isDelete,jdbcType=TINYINT}, #{userId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="ynu.edu.base.pojo.FlowrateReturnInformation">
+    insert into flowrate_return_information
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="departureTime != null">
+        departure_time,
+      </if>
+      <if test="destinationTime != null">
+        destination_time,
+      </if>
+      <if test="departure != null">
+        departure,
+      </if>
+      <if test="destination != null">
+        destination,
+      </if>
+      <if test="number != null">
+        number,
+      </if>
+      <if test="stayplace != null">
+        stayPlace,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="isDelete != null">
+        is_delete,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="departureTime != null">
+        #{departureTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="destinationTime != null">
+        #{destinationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="departure != null">
+        #{departure,jdbcType=VARCHAR},
+      </if>
+      <if test="destination != null">
+        #{destination,jdbcType=VARCHAR},
+      </if>
+      <if test="number != null">
+        #{number,jdbcType=INTEGER},
+      </if>
+      <if test="stayplace != null">
+        #{stayplace,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="isDelete != null">
+        #{isDelete,jdbcType=TINYINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="ynu.edu.base.pojo.FlowrateReturnInformationExample" resultType="java.lang.Long">
+    select count(*) from flowrate_return_information
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update flowrate_return_information
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=VARCHAR},
+      </if>
+      <if test="record.departureTime != null">
+        departure_time = #{record.departureTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.destinationTime != null">
+        destination_time = #{record.destinationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.departure != null">
+        departure = #{record.departure,jdbcType=VARCHAR},
+      </if>
+      <if test="record.destination != null">
+        destination = #{record.destination,jdbcType=VARCHAR},
+      </if>
+      <if test="record.number != null">
+        number = #{record.number,jdbcType=INTEGER},
+      </if>
+      <if test="record.stayplace != null">
+        stayPlace = #{record.stayplace,jdbcType=VARCHAR},
+      </if>
+      <if test="record.remark != null">
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isDelete != null">
+        is_delete = #{record.isDelete,jdbcType=TINYINT},
+      </if>
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update flowrate_return_information
+    set id = #{record.id,jdbcType=INTEGER},
+      type = #{record.type,jdbcType=VARCHAR},
+      departure_time = #{record.departureTime,jdbcType=TIMESTAMP},
+      destination_time = #{record.destinationTime,jdbcType=TIMESTAMP},
+      departure = #{record.departure,jdbcType=VARCHAR},
+      destination = #{record.destination,jdbcType=VARCHAR},
+      number = #{record.number,jdbcType=INTEGER},
+      stayPlace = #{record.stayplace,jdbcType=VARCHAR},
+      remark = #{record.remark,jdbcType=VARCHAR},
+      is_delete = #{record.isDelete,jdbcType=TINYINT},
+      user_id = #{record.userId,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="ynu.edu.base.pojo.FlowrateReturnInformation">
+    update flowrate_return_information
+    <set>
+      <if test="type != null">
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="departureTime != null">
+        departure_time = #{departureTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="destinationTime != null">
+        destination_time = #{destinationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="departure != null">
+        departure = #{departure,jdbcType=VARCHAR},
+      </if>
+      <if test="destination != null">
+        destination = #{destination,jdbcType=VARCHAR},
+      </if>
+      <if test="number != null">
+        number = #{number,jdbcType=INTEGER},
+      </if>
+      <if test="stayplace != null">
+        stayPlace = #{stayplace,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="isDelete != null">
+        is_delete = #{isDelete,jdbcType=TINYINT},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="ynu.edu.base.pojo.FlowrateReturnInformation">
+    update flowrate_return_information
+    set type = #{type,jdbcType=VARCHAR},
+      departure_time = #{departureTime,jdbcType=TIMESTAMP},
+      destination_time = #{destinationTime,jdbcType=TIMESTAMP},
+      departure = #{departure,jdbcType=VARCHAR},
+      destination = #{destination,jdbcType=VARCHAR},
+      number = #{number,jdbcType=INTEGER},
+      stayPlace = #{stayplace,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      is_delete = #{isDelete,jdbcType=TINYINT},
+      user_id = #{userId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
