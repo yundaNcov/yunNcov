@@ -1,99 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e0ab8c9-5ea3-4463-a2e0-c99e6900d5c2" name="Default Changelist" comment="version 1.0">
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/FlowrateAccessRecordMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/FlowrateArchiveMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/FlowrateLogsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/FlowrateMapDingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/FlowratePlaceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/FlowrateRegionBoundaryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/FlowrateReturnInformationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/PopedomMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/RoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/RolePopedomMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/SystemDd1Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateAccessRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateAccessRecordExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateArchive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateArchiveExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateLogs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateLogsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateMapDing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateMapDingExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowratePlace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowratePlaceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateRegionBoundary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateRegionBoundaryExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateReturnInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/FlowrateReturnInformationExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/Popedom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/PopedomExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/PopedomKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/RoleExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/RolePopedomExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/RolePopedomKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/SystemDd1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/SystemDd1Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/pojo/UserExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/FlowrateAccessRecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/FlowrateArchiveService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/FlowrateLogsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/FlowrateMapDingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/FlowratePlaceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/FlowrateRegionBoundaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/FlowrateReturnInformationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/FlowrateAccessRecordServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/FlowrateArchiveServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/FlowrateLogsServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/FlowrateMapDingServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/FlowratePlaceServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/FlowrateRegionBoundaryServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/FlowrateReturnInformationServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/PopedomServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/RolePopedomServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/RoleServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/SystemDd1ServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/Imp/UserServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/PopedomService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/RolePopedomService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/SystemDd1Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/until/BadWordUtil2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/until/CensorWords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/until/CorsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/until/Json.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/until/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/until/Place.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/until/ResultUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/until/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/MybatisGenerator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/FlowrateAccessRecordMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/FlowrateArchiveMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/FlowrateLogsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/FlowrateMapDingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/FlowratePlaceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/FlowrateRegionBoundaryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/FlowrateReturnInformationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/PopedomMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/RolePopedomMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/SystemDd1Mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ncov_base/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0e0ab8c9-5ea3-4463-a2e0-c99e6900d5c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ncov_base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ncov_base/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/BaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ncov_base/src/main/java/ynu/edu/base/BaseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ncov_base/target/classes/ynu/edu/base/BaseApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/ncov_base/target/classes/ynu/edu/base/BaseApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ncov_common/ncov_common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ncov_common/target/classes/ynu/edu/entity/StatusCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/ncov_common/target/classes/ynu/edu/entity/StatusCode.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +121,7 @@
       <workItem from="1581930613579" duration="563000" />
       <workItem from="1582125409181" duration="56000" />
       <workItem from="1582125494491" duration="4116000" />
-      <workItem from="1582163603992" duration="18252000" />
+      <workItem from="1582163603992" duration="18879000" />
     </task>
     <task id="LOCAL-00001" summary="The project framework，begin coding">
       <created>1581931113377</created>
@@ -221,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581931113377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="version 1.0">
+      <created>1582191785172</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582191785172</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,62 +157,62 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="209" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1582173339216" />
-    <state x="559" y="117" key="CommitChangelistDialog2" timestamp="1582191729237">
+    <state x="559" y="117" key="CommitChangelistDialog2" timestamp="1582191780734">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="559" y="117" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1582191729237" />
+    <state x="559" y="117" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1582191780734" />
     <state x="740" y="325" key="FileChooserDialogImpl" timestamp="1582125460787">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="325" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1582125460787" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1582191729247">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582191729247" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1582191729247">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582191729247" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1582191729247">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582191729247" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1582191729247">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582191729247" />
-    <state width="1877" height="285" key="GridCell.Tab.1.bottom" timestamp="1582191729248">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582191729248" />
-    <state width="1877" height="285" key="GridCell.Tab.1.center" timestamp="1582191729248">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582191729248" />
-    <state width="1877" height="285" key="GridCell.Tab.1.left" timestamp="1582191729247">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582191729247" />
-    <state width="1877" height="285" key="GridCell.Tab.1.right" timestamp="1582191729248">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582191729248" />
-    <state width="1877" height="352" key="GridCell.Tab.2.bottom" timestamp="1582190220287">
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.2.bottom" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582190220287" />
-    <state width="1877" height="352" key="GridCell.Tab.2.center" timestamp="1582190220287">
+    <state width="1877" height="352" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.2.center" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582190220287" />
-    <state width="1877" height="352" key="GridCell.Tab.2.left" timestamp="1582190220287">
+    <state width="1877" height="352" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.2.left" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582190220287" />
-    <state width="1877" height="352" key="GridCell.Tab.2.right" timestamp="1582190220287">
+    <state width="1877" height="352" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
+    <state width="1877" height="352" key="GridCell.Tab.2.right" timestamp="1582206769147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582190220287" />
+    <state width="1877" height="352" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582206769147" />
     <state x="461" y="212" key="SettingsEditor" timestamp="1582125462169">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -305,10 +221,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="968" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1582127412559" />
-    <state x="640" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1582163622107">
+    <state x="640" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1582376294509">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="640" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1582163622107" />
+    <state x="640" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1582376294509" />
     <state x="594" y="483" key="extract.method.dialog" timestamp="1582128048032">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

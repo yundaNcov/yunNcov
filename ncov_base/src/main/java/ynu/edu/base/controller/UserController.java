@@ -58,7 +58,6 @@ public class UserController {
      * @throws Exception
      */
 
-
     @RequestMapping(value = "/accessinsert")
     public String accessinsert(@RequestBody User user) throws Exception{
         try {
